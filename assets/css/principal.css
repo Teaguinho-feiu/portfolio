@@ -1,0 +1,416 @@
+/*Código feito por Tiago Gabriel Dusman Hoepfner, pode copiar se quiser, como dizia meu professor: "Na programação nada se cria, tudo se copia."*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --cor-destaque-links: #E33B3B;
+    --cor-destaque-links-forte: #C11919;
+    --cor-letras: #111;
+    --cor-letras-cabecalho: #fff; 
+    
+    --cor-cabecalho: #222;
+    --cor-fundos:#ccc; 
+
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-titulos: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding: 0 6%;
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    padding: 2% 0;
+}
+
+.cabecalho .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-img {
+    width: 200px;
+    height: 178px;
+
+    border-radius: 50%;
+}
+
+.cabecalho-inicio ul li {
+    display: inline;
+    
+    font-family: var(--fonte-texto);
+    font-size: 2rem;
+    color: var(--cor-letras-cabecalho);
+    
+    padding: 0 20px;
+}
+
+.cabecalho-inicio ul li a:hover {
+    color: var(--cor-destaque-links);
+    text-decoration: underline;
+}
+
+.cabecalho-inicio ul li:nth-child(-n + 3) {
+    border-right: solid #444 2px;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-letras);
+} 
+
+.texto {
+    font-size: 30px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-letras);
+}
+
+/* Sobre Mim */
+
+.sobre {
+    background-color: var(--cor-fundos);
+}
+
+.informacoes-sobre {
+    text-align: center;
+
+    padding: 2rem 0;
+}
+
+.sobre-mim {
+    margin-bottom: 2rem;
+}
+
+.sobre-mim p {
+    margin-top: 1.5rem;
+}
+
+/* Redes sociais */
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+.redes-sociais a {
+    text-align: center;
+
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+
+    border: solid 2px;
+    border-radius: 15px;
+
+    padding: 10px;
+
+    margin-top: 2rem;
+
+    transition: all 500ms;
+}
+
+.redes-sociais a:nth-child(1) {
+    color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+}
+
+.redes-sociais a:nth-child(2) {
+    color: rgb(27, 156, 237);
+    border-color: rgb(27, 156, 237);
+}
+
+.redes-sociais a:nth-child(3) {
+    color: rgb(22, 27, 34);
+    border-color: rgb(22, 27, 34);
+}
+
+.redes-sociais a:nth-child(4) {
+    color: rgb(88, 101, 242);
+    border-color: rgb(88, 101, 242);
+}
+
+.redes-sociais p {
+    margin: 0;
+}
+
+/* CERTIFICADOS */
+
+.certificados-voltar-button-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificados-voltar-button {
+    text-align: center;
+
+    color: var(--cor-destaque-links);
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+
+    border: solid 2px var(--cor-destaque-links);
+    border-radius: 15px;
+
+    padding: 10px;
+
+    height: fit-content;
+
+    margin-top: 2rem;
+
+    transition: all 500ms;
+}
+
+.certificados-voltar-button:hover {
+    color: var(--cor-destaque-links-forte);
+
+    border-color: var(--cor-destaque-links-forte);
+}
+
+/* Progetos */
+
+.progetos-bloco-area {
+    background-color: var(--cor-fundos);
+
+    text-align: center;
+
+    padding-top: 2rem;
+}
+
+.progetos-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-bottom: 2rem;
+
+    align-items: center;
+}
+
+.progetos {
+    background-color: var(--cor-cabecalho);
+
+    text-align: center;
+
+    width: 30%;
+    height: 30%;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    border-radius: 5%;
+
+    transition: all 500ms;
+}
+
+.progetos:hover {
+    background-color: #555;
+}
+
+.progetos h2 {
+    font-size: 30px;
+    color: var(--cor-letras-cabecalho);
+    font-family: var(--fonte-titulos);
+
+    margin-top: 1.2rem;
+}
+
+.progetos img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Contato */
+
+.contato {
+    background-color: var(--cor-cabecalho);
+    
+    padding-top: 2rem;
+
+    text-align: center;
+}
+
+.contato .titulo {
+    color: var(--cor-letras-cabecalho);
+}
+
+.contato-form {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.contato-form input, textarea, button {
+    margin-top: 1.2rem;
+    display: block;
+}
+
+.contato-form input, textarea {
+    background-color: #000;
+    
+    font-size: 17px;
+    color: #777;
+
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+
+    border-radius: 10px;
+    border: none;
+}
+
+.contato-form button {
+    background-color: #000;
+
+    font-size: 17px;
+    color: #777;
+
+    width: 40%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: all 500ms;
+}
+
+.contato-form button:hover {
+    background-color: #333;
+}
+
+.contato-numero {
+    padding-bottom: 1.2rem;
+
+    border-bottom: solid #333 2px;
+}
+
+.contato-numero h2 {
+    color: var(--cor-letras-cabecalho);
+    font-size: 35px;
+    font-family: var(--fonte-titulos);
+
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.contato-numero a {
+    color: var(--cor-letras-cabecalho);
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+}
+
+.contato-numero a:hover {
+    color: var(--cor-destaque-links);
+    text-decoration:underline;
+}
+
+/* Rodapé */
+
+.rodape {
+    background-color: var(--cor-cabecalho);
+
+    font-family: var(--fonte-texto);
+    color: #333;
+    font-size: 18px;
+
+    text-align: center;
+
+    padding: 2rem;
+}
+
+/* Layout responsivo  */
+
+@media screen and (max-width: 1024) {
+    .certificados-voltar-button {
+        padding-left: 100%;
+        padding-right: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .cabecalho .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho-inicio {
+        margin-top: 5%;
+    }
+
+    .progetos {
+        width: 40%;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .contato-form input, textarea {
+        width: 70%;
+    }
+
+    .contato-form button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cabecalho .container {
+        display: block;
+        text-align: center;
+    }
+
+    .cabecalho-inicio {
+        margin-top: 5%;
+    }
+
+    .cabecalho-inicio ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .cabecalho-inicio ul li:nth-child(-n + 3) {
+        border-bottom: solid #444 2px;
+        border-right: none;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .texto {
+        font-size: 25px;
+    }
+
+    .certificados-voltar-button, .redes-sociais a {
+        width: 100%;
+    }
+
+    .progetos {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .contato-form input, textarea {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+    .contato-form button {
+        width: 100%;
+    }
+}
